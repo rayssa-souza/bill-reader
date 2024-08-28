@@ -1,0 +1,41 @@
+{
+  "name": "bill-reader",
+  "version": "1.0.0",
+  "description": "The project's goal is to implement a service that manages individual water and gas consumption readings. To facilitate data collection, the service will use AI to obtain readings from a meter photo. Technical test for full-stack development at Shopper.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayssa-souza/bill-reader.git"
+  },
+  "author": "Rayssa de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayssa-souza/bill-reader/issues"
+  },
+  "homepage": "https://github.com/rayssa-souza/bill-reader#readme",
+  "dependencies": {
+    "@sequelize/postgres": "^7.0.0-alpha.41",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.4.1",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
